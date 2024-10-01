@@ -22,11 +22,34 @@ h2, h3, h4, h5, h6 {
 h1{
     font-family: Myriad Web, Arial, Helvetica, sans-serif;
     color: black;
-    background: lightgrey;
+    background: #d3d3d3;
     margin-top: 1.33em;
     margin-bottom: 1.33em;
 }
 
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .info-list {
+        padding-left: 0; /* Remove padding on mobile */
+        margin-left: 0px; /* Optional: slight margin for aesthetics */
+    }
+}
+
+.stage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.label {
+    width: 250px; /* Увеличиваем ширину для больших экранов */
+    min-width: 120px; /* Минимальная ширина для маленьких экранов */
+    font-weight: bold;
+}
 
 
 h1 { font-size: 2em; font-weight: 700; }
@@ -44,7 +67,7 @@ p {
 a:link, a:visited {
     text-decoration: none;
     font-weight: bold;
-    color: darkblue;
+    color: #00008a;
     background: lightgrey;
 }
 
