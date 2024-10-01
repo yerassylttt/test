@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Республиканская Олимпиада по Биологии - Новости</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .news-board {
+            margin: 20px 0;
+        }
+
+        article {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+
+        h3 {
+            margin-top: 0;
+            background-color: #f9f9f9;
+            color: black;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .toggle-checkbox {
+            display: none; /* Hide the checkbox */
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 10px;
+            transition: transform 0.3s; /* Smooth transition for rotation */
+        }
+
+        .news-content {
+            display: none; /* Hide the content by default */
+            padding: 10px 0;
+        }
+
+        /* Show the content when the checkbox is checked */
+        .toggle-checkbox:checked + .toggle-button + .news-content {
+            display: block; /* Show the content */
+        }
+
+        /* Triangle style (pointing up) */
+        .toggle-button::before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid black; /* Triangle color */
+            transition: transform 0.3s; /* Smooth transition for rotation */
+        }
+
+        /* Rotate triangle when checkbox is checked (pointing down) */
+        .toggle-checkbox:checked + .toggle-button::before {
+            transform: rotate(180deg); /* Rotate the triangle */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Республиканская Олимпиада по Биологии</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="general-info.html">Общая информация</a></li>
+            <li><a href="events.html">Предстоящие мероприятия</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="syllabus.html">Силлабус</a></li>
+            <li><a href="past-papers.html">Прошлые экзамены</a></li>
+            <li><a href="preparation-tips.html">Советы по подготовке</a></li>
+            <li><a href="author.html">Информация об Авторах</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Новости</h2>
+            <div class="news-board">
+                <article>
+                    <h3>Новая Олимпиада по Биологии 2024!</h3>
+                    <p><strong>Дата:</strong> 10 октября 2024</p>
+                    <input type="checkbox" id="toggle1" class="toggle-checkbox">
+                    <label for="toggle1" class="toggle-button"></label>
+                    <div class="news-content">
+                        <p>Мы рады объявить о проведении новой Олимпиады по Биологии в 2024 году. Зарегистрируйтесь сейчас, чтобы не пропустить шанс!</p>
+                    </div>
+                </article>
+                <article>
+                    <h3>Результаты предыдущей Олимпиады</h3>
+                    <p><strong>Дата:</strong> 5 сентября 2024</p>
+                    <input type="checkbox" id="toggle2" class="toggle-checkbox">
+                    <label for="toggle2" class="toggle-button"></label>
+                    <div class="news-content">
+                        <p>Поздравляем всех участников! Результаты предыдущей Олимпиады по Биологии уже доступны на нашем сайте. Проверьте свои результаты!</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Связаться с нами: info@nationalbiologyolympiad.org</p>
+    </footer>
+</body>
+</html>

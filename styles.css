@@ -1,0 +1,52 @@
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: Verdana, Myriad Web, Syntax, sans-serif;
+    color: black;
+    background: lightgrey;
+    line-height: 1.58em;
+    margin-top: 1.58em;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-bottom: 1.58em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Myriad Web, Arial, Helvetica, sans-serif;
+    color: black;
+    background: lightgrey;
+    margin-top: 1.33em;
+    margin-bottom: .33em;
+}
+
+h1 { font-size: 2em; font-weight: 700; }
+h2 { font-size: 1.75em; font-weight: 500; }
+h3 { font-size: 1.58em; font-weight: 500; }
+h4 { font-size: 1.33em; font-weight: 500; font-style: oblique; }
+h5, dt { font-size: 1.17em; font-weight: 500; }
+h6 { font-size: 1em; font-weight: 500; }
+
+p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+    background: lightgrey;
+}
+
+a:hover, a:active {
+    background: #FC0;
+}
+
+ul, ol {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+li {
+    margin-left: 3.16em;
+}
