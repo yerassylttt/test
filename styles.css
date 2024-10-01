@@ -11,6 +11,7 @@ body {
     margin-bottom: 1.58em;
 }
 
+
 h2, h3, h4, h5, h6 {
     font-family: Myriad Web, Arial, Helvetica, sans-serif;
     color: black;
@@ -25,6 +26,8 @@ h1{
     background: #d3d3d3;
     margin-top: 1.33em;
     margin-bottom: 1.33em;
+    line-height: 1; /* Increase this value for more space between lines */
+
 }
 
 
